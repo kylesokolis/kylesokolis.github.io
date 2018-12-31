@@ -2,7 +2,7 @@
 
 // configure
 $from = 'Contact form <https://kylesokolis.github.io/#contact>';
-$sendTo = 'kyle.sokolis@gmail.com';
+$mailTo = 'kyle.sokolis@gmail.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -39,7 +39,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
                 'Return-Path: ' . $from,
             );
 
-            mail($sendTo, $subject, $emailText, implode("\n", $headers));
+            mail($mailTo, $subject, $emailText, implode("\n", $headers));
 
             $responseArray = array('type' => 'success', 'message' => $okMessage);
         }

@@ -1,7 +1,7 @@
 <?php
 
 // configure
-$from = 'Contact form <https://kylesokolis.github.io/#contact>';
+$from = 'Contact form <kyle.sokolis@gmail.com>';
 $mailTo = 'kyle.sokolis@gmail.com';
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email

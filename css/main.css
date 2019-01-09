@@ -111,6 +111,13 @@ img {
   visibility: hidden;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 /* Buttons */
 input[type=submit], input[type=button], button, a.button {
   display: inline-block;

@@ -259,8 +259,12 @@ textarea.form-control, textarea.form-control:focus {
   display: none;
 }
 .contact-formspree input {
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
+.contact-formspree input:nth-child(1) {
+  margin-top: 0 !important;
+}
+
 /* /Contact form */
 
 .no-padding {

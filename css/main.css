@@ -258,6 +258,9 @@ textarea.form-control, textarea.form-control:focus {
 .form-group .help-block:empty {
   display: none;
 }
+.contact-formspree input {
+  margin: 20px 0;
+}
 /* /Contact form */
 
 .no-padding {
